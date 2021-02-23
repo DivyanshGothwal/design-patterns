@@ -8,8 +8,13 @@ public class App {
 		 * module
 		 * 
 		 * Here User info module is high level module which depends on MySqlConnection,
-		 * a low level module 
-		 * and both depends on Abstraction whicch is DBConnection which states this principle.
+		 * a low level module and both depends on Abstraction whicch is DBConnection
+		 * which states this principle.
+		 * 
+		 * if this principle is not followed the open close principle will be violated
+		 * as if low level module changes high level module also changes thus violating
+		 * OCP
+		 * 
 		 */
 		UserInfo u = new UserInfo(new MySqlConnection());
 		u.getUserInfo();
