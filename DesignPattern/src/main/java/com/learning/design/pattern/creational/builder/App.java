@@ -12,18 +12,24 @@ public class App {
 		 */
 		/**
 		 *
-		 * Builder Pattern example Why Builder Pattern? Basically Builder pattern is
+		 * Builder Pattern example 
+		 * Why Builder Pattern? 
+		 * Basically Builder pattern is
 		 * used to hide the object creation of the class from external entity.
 		 *
-		 * This application contains the example AirCraft
-		 *
-		 * AirCraft / \ F16 Boeing747
+		 * This application contains the example 
+		 * 			AirCraft
+		 * 			  / \ 
+		 * 			 /   \
+		 * 			/	  \
+		 * 	    AirCraft  F16 Boeing747
 		 * 
-		 * 
-		 * AirCraftBuilder :- responsible to give empty definetion of the common method
-		 * which will used into the builder / \ F16Builder Boeing747Builder
+		 * 	AirCraftBuilder :- 	responsible to give empty definition of the common method
+		 * 						which will used into the builder 
+		 * 		/ 		\ 
+		 * F16Builder Boeing747Builder
 		 *
-		 * AirCraftDirector :- which uses AirCraftBuilder as contructor,according to
+		 * AirCraftDirector :- which uses AirCraftBuilder as constructor,according to
 		 * requested builder object creation functionality will invoked by the passed
 		 * builder.
 		 *

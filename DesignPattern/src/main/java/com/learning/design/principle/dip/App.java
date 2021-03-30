@@ -8,7 +8,7 @@ public class App {
 		 * module
 		 * 
 		 * Here User info module is high level module which depends on MySqlConnection,
-		 * a low level module and both depends on Abstraction whicch is DBConnection
+		 * a low level module, both depends on Abstraction which is DBConnection
 		 * which states this principle.
 		 * 
 		 * if this principle is not followed the open close principle will be violated
@@ -16,7 +16,25 @@ public class App {
 		 * OCP
 		 * 
 		 */
-		UserInfo u = new UserInfo(new MySqlConnection());
+		UserInfo u = new UserInfo(new OracleConnection());
 		u.getUserInfo();
 	}
 }
+
+
+/*
+
+
+class A depends class b
+
+b.test();
+
+
+class a depends on interface c
+
+//class b also depends interface c
+class d also depends interface c
+
+
+
+*/
