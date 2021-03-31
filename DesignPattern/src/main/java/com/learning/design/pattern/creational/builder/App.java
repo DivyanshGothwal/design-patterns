@@ -36,7 +36,7 @@ public class App {
 		 *
 		 * App.java is the main application of this pattern.
 		 */
-		AbstractAircraftFactory af = new F16BuilderFactory();
+		AbstractAircraftFactory af = new F16Builder();
 		Director d = new Director(af);
 		d.construct(true);
 		IAircraft arft = af.getAircraft();

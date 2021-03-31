@@ -1,8 +1,8 @@
 package com.learning.design.pattern.creational.builder;
 
-public class F16BuilderFactory extends AbstractAircraftFactory {
+public class Boeing747Builder extends AbstractAircraftFactory {
 
-	F16 f16;
+	Boeing747 boeing;
 
 	@Override
 	public void buildCockpit() {
@@ -16,15 +16,20 @@ public class F16BuilderFactory extends AbstractAircraftFactory {
 
 	@Override
 	public void buildEngine() {
-		System.out.println("building engine");
+		System.out.println("building Engine");
+	}
+
+	@Override
+	public void buildPassanger() {
+		System.out.println("building Passanger");
 	}
 
 	@Override
 	public IAircraft getAircraft() {
-		if (f16 == null) {
-			f16 = new F16();
+		if(boeing==null) {
+			boeing = new Boeing747();
 		}
-		return f16;
+		return boeing;
 	}
 
 }

@@ -1,6 +1,6 @@
 package com.learning.design.pattern.creational.builder;
 
-public interface IAircraftFactory {
+public interface IAircraftBuilder {
 
 	public void buildCockpit();
 
