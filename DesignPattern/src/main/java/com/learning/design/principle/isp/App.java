@@ -4,6 +4,10 @@ public class App {
 
 	public static void main(String ar[]) {
 		/**
+		 * 
+		 * Big fat interface should be broken down into multiple interfaces
+		 * 
+		 * 
 		 * this design follows interface segregation principle as bank interface has its
 		 * own method specific to bank payments and loan interface has its own method
 		 * specific to loan payments

@@ -4,12 +4,14 @@ public class App {
 
 	public static void main(String[] ar) {
 		/**
+		 * 
+		 * Both high level module and low level module should not depend on each other 
+		 * but they should depend on Abstractions.
+		 * 
 		 * Below implementation follows DIP as high level module depends on low level
 		 * module
 		 * 
-		 * Here User info module is high level module which depends on MySqlConnection,
-		 * a low level module, both depends on Abstraction which is DBConnection
-		 * which states this principle.
+		 * Here User info module is high level module which depends on DBConnection
 		 * 
 		 * if this principle is not followed the open close principle will be violated
 		 * as if low level module changes high level module also changes thus violating
@@ -20,21 +22,3 @@ public class App {
 		u.getUserInfo();
 	}
 }
-
-
-/*
-
-
-class A depends class b
-
-b.test();
-
-
-class a depends on interface c
-
-//class b also depends interface c
-class d also depends interface c
-
-
-
-*/
