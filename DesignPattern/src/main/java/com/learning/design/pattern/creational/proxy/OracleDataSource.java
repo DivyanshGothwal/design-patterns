@@ -1,6 +1,6 @@
 package com.learning.design.pattern.creational.proxy;
 
-public class OltpDataSource implements DataSource {
+public class OracleDataSource implements DataSource {
 
 	@Override
 	public void query() {

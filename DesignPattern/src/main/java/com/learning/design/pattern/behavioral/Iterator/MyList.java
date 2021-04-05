@@ -3,7 +3,7 @@ package com.learning.design.pattern.behavioral.Iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyList implements IMyList {
+public class MyList implements IMyList, IterableList {
 
 	private List<Integer> list;
 

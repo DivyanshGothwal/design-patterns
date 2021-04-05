@@ -4,7 +4,7 @@ public class OracleDataSourceFactory implements DataSourceFactory {
 
 	@Override
 	public DataSource createDataSource() {
-		return new DataSourceProxy(new OltpDataSource());
+		return new DataSourceProxy(new OracleDataSource());
 	}
 
 }
