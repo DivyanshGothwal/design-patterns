@@ -3,14 +3,13 @@ package com.learning.design.pattern.creational.builder;
 public class App {
 
 	public static void main(String ar[]) {
-		/*
+		/**
 		 * 
 		 * This design pattern is mainly focused on abstracting the process of object
 		 * creation i.e How the Object is created that is being abstracted. whereas in
 		 * factory pattern it is mainly which object to create is being abstracted.
 		 * 
-		 */
-		/**
+		 *
 		 *
 		 * Builder Pattern example 
 		 * Why Builder Pattern? 
