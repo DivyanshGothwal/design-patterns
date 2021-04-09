@@ -20,7 +20,6 @@ public class F16AircraftBuilder implements IAircraftBuilder{
 
 	@Override
 	public void buildPassangers() {
-//		f16.setPasssenger(true);
 	}
 
 	@Override
