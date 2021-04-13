@@ -1,4 +1,4 @@
-package com.learning.design.pattern.creational.proxy;
+package com.learning.design.pattern.structural.proxy;
 
 public class OracleDataSourceFactory implements DataSourceFactory {
 
