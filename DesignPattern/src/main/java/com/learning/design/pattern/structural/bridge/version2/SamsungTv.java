@@ -2,19 +2,22 @@ package com.learning.design.pattern.structural.bridge.version2;
 
 public class SamsungTv implements ITv {
 
-	private int volume;
-	private int channelId;
+	private IRemote remote;
+
+	SamsungTv(IRemote remote) {
+		this.remote = remote;
+	}
 
 	@Override
 	public void changeVolume(int amount) {
-		volume += amount;
-		System.out.println("Volume of samsung tv changed to : " + volume);
+		this.remote.changeVolume(amount);
+		System.out.println("Volume of samsung tv changed to : " + amount);
 	}
 
 	@Override
 	public void changeChannel(int channelId) {
-		this.channelId = channelId;
-		System.out.println("ChannelId of samsung tv changed to : " + this.channelId);
+		this.remote.changeChannel(channelId); 
+		System.out.println("ChannelId of samsung tv changed to : " + channelId);
 	}
 
 	@Override
@@ -24,8 +27,8 @@ public class SamsungTv implements ITv {
 
 	@Override
 	public void stop() {
-		volume = 0;
-		channelId = 0;
+		this.remote.changeVolume(0);
+		this.remote.changeChannel(0); 
 		System.out.println("stopping the samsung tv : ");
 
 	}

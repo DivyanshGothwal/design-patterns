@@ -7,7 +7,7 @@ public class App {
 		 * Singleton is when only one object creation is required. now how to make
 		 * singleton class as thread safe
 		 * 
-		 * using Volatile keyword Problem :- If two threads run on different processors
+		 * using Volatile keyword :- If two threads run on different processors
 		 * each thread may have its own local copy of sharedVariable. If one thread
 		 * modifies its value the change might not reflect in the original one in the
 		 * main memory instantly. This depends on the write policy of cache. Now the
@@ -21,10 +21,10 @@ public class App {
 		 * 				  visible to other threads.
 		 * 
 		 * Java’s synchronized keyword guarantees both mutual exclusion and visibility.
-		 * In some cases we may only desire the visibility and not atomicity. Use of 
+		 * In some cases we may only desire the visibility and not Mutual Exclusion. Use of 
 		 * synchronized in such situation is an overkill and may cause scalability problems.
 		 * Here volatile comes to the rescue. Volatile variables have the visibility 
-		 * features of synchronized but not the atomicity features. 
+		 * features of synchronized but not the Mutual Exclusion features. 
 		 * The values of volatile variable will never be cached and all writes and reads 
 		 * will be done to and from the main memory.
 		 */

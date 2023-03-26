@@ -31,5 +31,9 @@ public class App {
 	public static void main(String ar[]) {
 		IAircraft air = new HotAirBallonAdaptor(new HotAirBalloon());
 		air.fly();
+		String s = new String("test").intern();
+
+		String s1 = "test";
+		System.out.println(s==s1);
 	}
 }

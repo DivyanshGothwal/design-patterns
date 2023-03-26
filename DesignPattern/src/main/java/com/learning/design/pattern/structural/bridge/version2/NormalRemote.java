@@ -2,30 +2,26 @@ package com.learning.design.pattern.structural.bridge.version2;
 
 public class NormalRemote implements IRemote {
 
-	protected ITv iTv;
-
-	public NormalRemote(ITv tv) {
-		this.iTv = tv;
-	}
-
 	@Override
-	public void changeVolume() {
-		iTv.changeVolume(1);
+	public void changeVolume(int amount) {
+		System.out.println("Volume of tv by Normal remote to : " + amount);
 	}
 
 	@Override
 	public void start() {
-		iTv.start();
+		System.out.println("starting the tv by Normal remote: ");
+		
 	}
 
 	@Override
 	public void stop() {
-		iTv.stop();
+		System.out.println("stopping the tv by Normal remote: ");
+		
 	}
 
 	@Override
 	public void changeChannel(int channelId) {
-		this.iTv.changeChannel(channelId);
+		System.out.println("ChannelId of samsung tv changed to : " + channelId);
 	}
 
 }
