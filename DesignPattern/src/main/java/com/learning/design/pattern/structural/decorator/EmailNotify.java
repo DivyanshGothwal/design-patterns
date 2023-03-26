@@ -1,14 +1,14 @@
 package com.learning.design.pattern.structural.decorator;
 
-public class SMSNotifier extends BaseDecorator {
+public class EmailNotify extends NotifyDecorator {
 
-	public SMSNotifier(INotifier notifier) {
+	public EmailNotify(INotifier notifier) {
 		super(notifier);
 	}
-
+	
 	@Override
 	public void notifyUser() {
+		System.out.println("Notifying through Email");
 		super.notifyUser();
-		System.out.println("Notifying through SMS");
 	}
 }

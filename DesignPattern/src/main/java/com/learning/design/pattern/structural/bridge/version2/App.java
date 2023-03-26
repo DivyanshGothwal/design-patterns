@@ -8,7 +8,7 @@ package com.learning.design.pattern.structural.bridge.version2;
  * 
  * we can split remote and TV class and have a has-a relationship between tv and remote i.e Samsung tv has a remote.
  * 
- * There is a bridge between Remote and TV
+ * There is a bridge(has-a relationship) between Remote and TV i.e two different interfaces
  * @author dgothwal
  *
  */
